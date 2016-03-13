@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_icon_social"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+
+
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_icon_social"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="false">
+
+        <TextView
+            android:id="@+id/nams"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Username:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/sport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Sport:"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/play"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:maxEms="20"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:text="Players"
+                android:textColor="#808080"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/numbero"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:maxEms="20"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:textColor="#808080"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="left" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:maxEms="20"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:text="Match dates:"
+                android:textColor="#808080"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:gravity="right"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:maxEms="20"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:text="Postcode:"
+                android:textColor="#808080"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:maxEms="20"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:text="City:"
+                android:textColor="#808080"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:maxEms="20"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:text="Country:"
+                android:textColor="#808080"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="10dp"
+            android:maxEms="20"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:ellipsize="end"
+            android:text="Posted on:"
+            android:textColor="#808080"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="10dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
